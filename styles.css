@@ -1,0 +1,271 @@
+html{
+    font-size:clamp(1rem,1.5vw,1.25rem);
+    box-sizing:border-box
+}
+*,::after,::before{
+    box-sizing:inherit
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:Inter,sans-serif;
+    font-weight:400;
+    color:#000
+}
+.content h1{
+    font-size:clamp(2.5rem,6vw,5rem);
+    margin-bottom:.2em;
+}
+.content h2{
+    font-size:clamp(1.75rem,3.5vw,3rem);
+    margin-top:.1em
+}
+.about h2{
+    margin-bottom:.25em
+}
+.about p{
+    margin-top:0;
+    font-size:clamp(1rem,2vw,1.4rem);
+    max-width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.4
+}
+.mainDisplay{
+    display:flex;
+    min-height:100vh;
+}
+.sidebox{
+    width:25%;
+    padding-top:5%;
+    text-align:center;
+    background-color:#fbdba0
+}
+.welcome{
+    padding-top: 1em;
+}
+.imageTitleContainer h1 {
+    margin: 0;
+    text-align: center;
+}
+.content{
+    flex:1;
+    text-align:center;
+    padding:0 1rem
+}
+.content>div{
+    padding-bottom:1%
+}
+.pfp,.pfp-mobile{
+    border-radius:50%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position:50% 10%
+}
+.pfp{
+    width:50%
+}
+.pfp-mobile{
+    display:none
+}
+.sidebox a{
+    text-decoration:none
+}
+.social-icon{
+    width:10%;
+    transition:transform .2s
+}
+.social-icon:hover{
+    transform:translateY(-2px) scale(1.03)
+}
+#typing{
+    display:inline-block;
+    border-right:2px solid #000;
+    animation:blink .75s step-end infinite
+}
+@keyframes blink{
+    50%{
+        border-color:transparent
+    }
+}
+.project-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    justify-content:center;
+    margin:24px 0
+}
+.project-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:clamp(250px,27%,350px);
+    padding:16px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.5);
+    text-decoration:none;
+    color:inherit;
+    transition:box-shadow .2s,transform .2s
+}
+.project-card:hover{
+    box-shadow:0 4px 16px rgba(0,0,0,.7);
+    transform:translateY(-4px) scale(1.03)
+}
+.project-card img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:12px
+}
+.project-card span{
+    font-size:1.1em;
+    font-weight:600;
+    text-align:center
+}
+@media (max-width:768px){
+    .mainDisplay{
+        flex-direction:column;
+        align-items:center
+    }
+    .sidebox{
+        display:none
+    }
+    .imageTitleContainer{
+        display:flex;
+        gap:1.5em;
+        justify-content:center;
+        align-items:center
+    }
+    .pfp-mobile{
+        display:block;
+        width:clamp(100px,35%,180px)
+    }
+    .mainDisplay{
+        padding: 1em;
+    }
+    .project-list{
+        flex-direction:column;
+        align-items:center
+    }
+    .project-card{
+        width:80%;
+        max-width:300px
+    }
+}
+
+/* ====== RESUME ====== */
+.resume-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.resume-container {
+  background: #fff;
+  border: 2px solid #333;
+  padding: 40px 60px;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.resume-container h1,
+.resume-container h2,
+.resume-container h3 {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.resume-container h1 {
+  font-size: 2rem;
+}
+
+.resume-container h2 {
+  font-size: 1.5rem;
+  color: #00ab44
+}
+
+.resume-container h3 {
+  font-size: 1.2rem;
+}
+
+.resume-container p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: #000;
+}
+
+.resume-container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.degree {
+  font-weight: 400;
+  color: #666;
+}
+
+.company {
+  font-weight: 400;
+  color: #666;
+}
+
+.dates {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+}
+
+.contact-info a {
+  color: #1155cc;
+  text-decoration: underline;
+}
+
+/* Layout for project grid */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+/* Each clickable tile */
+.work-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.work-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail image on tile */
+.work-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text block inside tile */
+.work-text {
+  padding: 0.75rem 1rem;
+}
+
+.work-text h3 {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.work-text p {
+  font-size: 1rem;
+  color: #555;
+}

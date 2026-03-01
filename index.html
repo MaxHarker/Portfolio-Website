@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio website of Max Harker">
+        <meta name="author" content="Max Harker">
+        <title>Main</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="icon" href="assets/logo (1).png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul class="nav-links">
+                    <li><h1>Max Harker</h1></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menu-icon"><p>☰</p></li>
+                </ul>
+            </nav>
+            <!-- Mobile dropdown menu -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mainDisplay">
+                <div class="sidebox">
+                    <img src="assets/pfp.jpg" alt="Max Harker" class="pfp">
+                    <h1>Max Harker</h1>
+                    <a href="https://github.com/MaxHarker" target="_blank">
+                        <img src="assets/github.png" alt="GitHub profile link" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/max-harker-019b5b316/" target="_blank">
+                        <img src="assets/linkedin.png" alt="LinkedIn profile link" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/maxharker63/" target="_blank">
+                        <img src="assets/instagram.png" alt="Instagram profile link" class="social-icon">
+                    </a>
+                    <a href="mailto:maxharker@gmail.com">
+                        <img src="assets/email.png" alt="Email Max Harker" class="social-icon">
+                    </a>
+                    <a href="tel:+13854415107">
+                        <img src="assets/phone.png" alt="Call Max Harker" class="social-icon">
+                    </a>
+                    <h2>Skills</h2>
+                    <p>C++
+                        <br>Python
+                        <br>HTML/CSS
+                        <br>JavaScript
+                        <br>SQL
+                        <br>Git/GitHub
+                        <br>Flutter
+                        <br>Dart
+                    </p>
+                    <h2>Hobbies</h2>
+                    <p>Basketball
+                        <br>Chess
+                        <br>Hiking
+                        <br>Longboarding
+                        <br>Camping
+                        <br>Gaming
+                        <br>Programming
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="welcome">
+                        <div class="imageTitleContainer">
+                            <img src="assets/pfp.jpg" alt="Max Harker" class="pfp-mobile">
+                            <h1 style="font-size: 5em;">Hi! I'm Max :)</h1>
+                        </div>
+                        <h2 style="font-size: 3em;"><span id="typing"></span></h2>
+                    </div>
+                    <div class="about">
+                        <h2>About Me</h2>
+                        <p>I am an aspiring technology professional currently pursuing
+                             a B.S. in Computer Science at Weber State University. I 
+                             have a strong foundation in software engineering, data 
+                             analysis, system support, and technical troubleshooting, 
+                             built through a combination of academic coursework, 
+                             personal projects, and hands-on experience. I'm excited to
+                              continue learning and expanding my multidisciplinary skill
+                            set.</p>
+                    </div>
+                    <div class="projects">
+                        <h2>Projects</h2>
+                        <div class="project-list">
+                            <a href="project1.html" class="project-card">
+                                <img src="assets/website.jpg" alt="Portfolio Website">
+                                <span>Portfolio Website</span>
+                            </a>
+                            <a href="project2.html" class="project-card">
+                                <img src="assets/neuralNetwork.jpg" alt="Custom Neural Network">
+                                <span>Mancala Solver</span>
+                            </a>
+                            <a href="project3.html" class="project-card">
+                                <img src="assets/chessEngine.jpg" alt="Chess Analysis Engine">
+                                <span>Chess</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            const menuIcon = document.querySelector('.menu-icon');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            menuIcon.addEventListener('click', () => {
+                mobileMenu.classList.toggle('show');
+            });
+        </script>
+    </body>
+</html>

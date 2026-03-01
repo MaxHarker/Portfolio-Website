@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio website of Max Harker">
+        <meta name="author" content="Max Harker">
+        <title>Main</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="icon" href="assets/logo (1).png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul class="nav-links">
+                    <li><h1>Max Harker</h1></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menu-icon"><p>☰</p></li>
+                </ul>
+            </nav>
+            <!-- Mobile dropdown menu -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <section class="work-section">
+                    <h2>Featured Projects</h2>
+                    <div class="work-grid">
+
+                        <!-- Project Tile 1 -->
+                        <a href="project1.html" class="work-tile">
+                        <img src="assets/website.jpg" alt="Portfolio Website Screenshot" class="work-thumb">
+                        <div class="work-text">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive and fully custom-built portfolio website showcasing my projects, skills, and experience</p>
+                        </div>
+                        </a>
+
+                        <!-- Project Tile 2 -->
+                        <a href="project2.html" class="work-tile">
+                        <img src="assets/neuralNetwork.jpg" alt="Neural Network Project Screenshot" class="work-thumb">
+                        <div class="work-text">
+                            <h3>Mancala Solver</h3>
+                            <p>A Mancala solver that uses a recursive lookahead strategy to evaluate all possible move sequences and select the optimal play.</p>
+                        </div>
+                        </a>
+
+                        <!-- Project Tile 3 -->
+                        <a href="project3.html" class="work-tile">
+                        <img src="assets/chessEngine.jpg" alt="Chess Engine Screenshot" class="work-thumb">
+                        <div class="work-text">
+                            <h3>Chess</h3>
+                            <p>A fully functional chess engine with complete move validation, turn management, and game logic</p>
+                        </div>
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
